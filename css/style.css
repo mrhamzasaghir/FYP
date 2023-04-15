@@ -1,0 +1,824 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+:root{
+    --main-color:#104163;
+    --second-color:#79aa2f;
+    --black:#000;
+    --white:#fff;
+    --silver:#f5f5f5;
+    --font-family:"Montserrat";
+}
+button{
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* Header CSS */
+.Top-header{
+    background-color: var(--main-color);
+}
+.t-phone{
+    font-size: 14px;
+    font-family: var(--font-family);
+}
+.t-location{
+    padding-left: 58px;
+}
+.t-location span{
+    font-size: 15px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    padding-left: 20px;
+}
+.mainheader{
+    background-color:var(--silver);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar{
+    margin-top: -5px;
+}
+.navbar img{
+    width: 150px;
+    height: auto;
+}
+.navbar .nav-item{
+    margin: 10px;
+}
+.navbar .nav-link{
+    color: var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus{
+    color: var(--second-color);
+    transition: all .2s ease-in-out;
+}
+.navbar .appointment{
+    background-color: var(--main-color);
+    border-radius: 8px;
+}
+.navbar .appointment a{
+    color: var(--white) !important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.navbar .appointment:hover{
+    background-color: var(--second-color);
+}
+.navbar .dropdown-menu{
+    background-color: var(--silver);
+}
+.navbar .dropdown-item{
+    color: var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+.navbar .dropdown-item:hover{
+    background-color: #104163;
+    color: var(--white);
+}
+.mainheader .navbar-toggler{
+    border: 0;
+    box-shadow: none;
+    line-height: 2;
+}
+.fa-solid.fa-bars.navbar-toggler-icon{
+    color: var(--black);
+}
+.header-scrolled{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 0px 8px #c8c6c687;
+    transition: 0.3s ease-in-out;
+    background-color: var(--white);
+}
+/* Header CSS End */
+
+/* ---------------------------------Home Page CSS-------------------------------- */
+
+/* Slider */
+.carousel-caption{
+    bottom: 30%;
+}
+.carousel .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0,0,0.4);
+    z-index: 99;
+}
+.carousel-indicators, .carousel-item, .carousel-caption, .carousel-control-next, .carousel-control-prev{
+    z-index: 100;
+}
+/* slider end */
+
+/* Card CSS */
+.cards{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1250px;
+    justify-content: center;
+    margin-left: 50px;
+}
+.card{
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #c8c6c6;
+    padding: 20px;
+    transition: all .4s;
+    margin-left: 30px;
+    margin-right: 30px;
+    transition: 0.5 ease-in;
+}
+.card:hover{
+    background-color: var(--second-color);
+    color: var(--white);
+    transform: scale(1.1, 1.1)
+}
+.card h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.card img{
+    width: 70px;
+    height: auto;
+}
+/* Card End */
+
+/* About Section on Home CSS */
+.about{
+    margin: 50px 200px 50px 200px;
+}
+.about p{
+    font-size: 18px;
+}
+.about h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.about h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: capitalize;
+    font-family: 'Poppins';
+}
+/* About setion end */
+
+/* Services Section Start */
+.services{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.services h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.services h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: capitalize;
+    font-family: 'Poppins';
+}
+.space{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.clinic{
+    margin-top: 20px;
+}
+.clinic img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    z-index: 0;
+    transition: 0.5 ease;
+}
+.clinic h2{
+    font-weight: 500;
+    background-color: var(--main-color);
+    color: var(--white);
+    z-index: 1;
+    margin-top: -30px;
+    padding: 10px;
+    position: relative;
+    border-radius: 0px 0px 20px 20px;
+    width: 80%;
+    margin-left:35px;
+}
+.clinic h2:hover{
+    background-color: var(--second-color);
+    color: var(--white);
+    transition: all .3s ease-in-out;
+}
+.clinic-btn button{
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 40px 12px 40px;
+   font-family: var(--font-family);
+   border-radius: 10px;
+   margin-top: 15px;
+   border: none;
+}
+.clinic-btn button:hover{
+    background-color: var(--second-color);
+    border: none;
+}
+/* CLinics END */
+
+/* Doctor CSS Start */
+.doctor{
+    margin-top: 100px;
+}
+.specialist{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.specialist{
+    background-color: var(--main-color);
+    padding: 100px 50px;
+    margin-top: 30px;
+    border-radius: 0px 0px 30px 30px; 
+}
+.specialist h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+}
+.specialist h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--white);
+    text-transform: capitalize;
+    font-family: 'Poppins';
+}
+.right-sec{
+    margin-top: 50px;
+}
+.right-sec h2{
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2.3rem;
+}
+.right-sec p{
+    color: var(--white);
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+.doctorsec-btn{
+   width: 30%;
+   background-color: var(--second-color);
+   padding: 10px 40px 10px 40px;
+   border-radius: 8px;
+}
+.doctorsec-btn:hover{
+    background-color: var(--white);
+}
+.doctorsec-btn button:hover{
+    background-color: var(--white);
+    color: var(--main-color);
+    transition: all .2s ease-in-out;
+}
+.doctorsec-btn button{
+    background:none;
+    border: none;
+    color: var(--white);
+}
+.specialist img{
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.docbtn{
+    background-color: var(--second-color);
+    color: var(--white);
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+    margin-top: 20px;
+    border: var(--white);
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+.docbtn:hover{
+    background-color: var(--white);
+    border: var(--white);
+    color: var(--main-color);
+}
+.doctorh2{
+    font-size: 25px !important;
+    font-weight: 600;
+    color:white;
+    font-family: var(--font-family);
+}
+.doctorh3{
+    font-size: 20px !important;
+    font-weight: 500;
+    color: white;
+    font-family: var(--font-family);
+}
+/* Doctor CSS ENd */
+
+/* Why Choose Start */
+.choose{
+    margin:100px 0px;
+}
+.choosesec2{
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.choose img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c8c6c693;
+    padding: 30px 10px 0px 10px;
+    margin-left: 60px;
+}
+.choose h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+    font-family: var(--font-family);
+    margin-bottom: 20px;
+}
+.choose ul li{
+    font-size: 18px;
+    color: var(--black);
+    font-family: var(--font-family);
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
+.discover{
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    padding: 10px 40px 10px 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+}
+.discover:hover{
+    background-color: var(--second-color);
+    border: none;
+}
+/* why Choose End */
+
+/* Total Section Start */
+.total{
+    background-color: var(--main-color);
+    margin: 100px 0px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+
+.total h2{
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 600;
+}
+.total h3{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* FAQS */
+.faq{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.faq h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.faq h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.location{
+    margin-bottom: 30px;
+}
+.accordion-button{
+    background-color: #f5f5f5;
+    color: var(--main-color);
+}
+.accordion-button:hover{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+.accordion-button:active{
+    background-color: var(--main-color);
+    color: var(--white);
+}
+.accordion-body{
+    font-size: 16px;
+}
+.faq{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.map{
+    margin-bottom: -5px;
+}
+/* FAQ ENd */
+
+
+/* ----------------------------------------- About Page CSS------------------------------ */
+.otherpage-hero{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+    padding: auto;
+}
+.otherpage-hero h2{
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+.overview{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.overview-info h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.overview-info p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+.overview-img img{
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    justify-content: center;
+}
+.who-we-are{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.who h2{
+     color: var(--white);
+     font-size: 35px;
+     font-weight: 600;
+     margin-bottom: 15px;
+     text-transform: uppercase;
+}
+.who p{
+     color: var(--white);
+     font-size: 16px;
+     font-weight: 500;
+     line-height: 1.9rem;
+}
+.mission{
+    margin: 100px 0px;
+}
+.mision-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.mission-info h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.mission-info li{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+}
+.promise{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.p-h{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.caring{
+    margin-top: 50px;
+}
+.caring h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.processor h2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.facilities h2{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 2.0rem;
+}
+.processor{
+    margin-top: 64px;
+}
+
+/* ---------------------Service Page CSS---------------- */
+
+.service{
+    margin: 100px 100px;
+    background-color: var(--silver);
+    border-radius: 15px;
+    box-shadow: 0px 7px 7px #84828240;
+    padding: 30px 50px;
+    border: 2px solid var(--main-color);
+}
+.service a {
+    background-color: var(--main-color);
+    padding: 12px 40px 12px 40px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 12px;
+}
+.service a:hover{
+    background-color: var(--second-color);
+    border: var(--second-color);
+}
+.service-img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    padding-left: 150px;
+}
+.service img{
+    border-radius: 10px;
+}
+.service-info h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.service-info p{
+    font-size: 16px;
+    line-height: 1.6rem;
+    color: var(--black);
+    margin-bottom: 20px;
+    
+}
+.service-img-2 img{
+width: 80%;
+height: auto;
+}
+
+/* Doctor CSS */
+.dr{
+    margin: 100px 0px;
+}
+.dr-img img{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+.dr h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+.dr h3{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: -100px;
+}
+.dr-btn a{
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 30px;
+    padding: 12px 40px 12px 40px;
+    border-radius: 7px;
+}
+.dr-btn a:hover{
+    background-color: var(--second-color);
+}
+
+/* -------------Contact Page----------- */
+.contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact hr {
+    width: 50%;
+  }
+ .contact hr:not([size]) {
+    height: 4px;
+    color: var(--main-color);
+    opacity: 100%;
+    margin-top: -20px;
+}
+.name, .email, .mobile,.mesg{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: -250px;
+}
+input.form-control{
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    box-shadow: 0px 5px 7px #c8c6c687;
+}
+.form-control:focus {
+    color: var(--black);
+    background-color: var(#79aa2f);
+    border-color: var(--second-color);
+    box-shadow: 0px 5px 7px #c8c6c687;    
+}
+textarea.form-control{
+    border: 2px solid var(--main-color);
+    padding: 10px;
+    box-shadow: 0px 5px 7px #c8c6c687;
+}
+.submitbtn{
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 12px 30px 12px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: all .3s ease;
+}
+.submitbtn:hover{
+    background-color: var(--second-color);
+    border:none;
+    box-shadow: 0px 5px 7px #c8c6c687;
+}
+.accordion-button:not(.collapsed) {
+    color: #fff!important;
+    background-color: var(--second-color) !important;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: var(--second-color) !important;
+    box-shadow: 0 0 0 0.25rem var(--second-color) !important;
+}
+
+/* -------------------Doctor BIO--------------- */
+.bio{
+    margin: 100px 10px;
+}
+.bio h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.bio h3{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.bio p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 1.7rem;
+}
+.bio ul li{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    line-height: 1.5rem;
+}
+.bio-spec{
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 1.7rem;
+}
+.bio-img img{
+    width: 330px;
+    height: auto;
+    border-radius: 25px;
+}
+.bio-spc h5{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.7rem;
+    margin-top: 15px;
+}
+.bio-btn a{
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 15px;
+    padding: 12px 40px 12px 40px;
+    border-radius: 7px;
+}
+.bio-btn a:hover{
+    background-color: var(--second-color);
+}
+
+/* Footer Section */
+.footer{
+    background-color: var(--main-color);
+}
+.footer p,i,a,h6{
+    color: var(--white);
+}
+.footer a:hover{
+    color: var(--second-color);
+}
+.footer p:hover{
+    color: var(--second-color);
+}
+.footer span{
+    color: var(--white);
+    margin-left: 58px;
+}
+.icons{
+    margin-right: 58px;
+}
+.icons i{
+    color: var(--white);
+}
+.icons i:hover{
+    color: var(--second-color);
+}
+.fs2 i{
+    color: var(--white);
+}
+.address:hover{
+    color: var(--white) !important;
+}
+.details:hover{
+    color: var(--white) !important;
+}
+.fs3{
+    color: var(--white);
+}
